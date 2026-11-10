@@ -1,0 +1,19 @@
+# Build output
+build/
+out/
+*.o
+*.obj
+*.d
+*.exe
+
+# Generated HTML samples
+*.html
+!tests/**/*.html
+
+# Editor / OS metadata
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
