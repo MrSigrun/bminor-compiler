@@ -1,0 +1,4 @@
+val: integer = 10$;
+msg: string = "broken string
+next_val: integer = 25;
+/* unclosed comment at end of file
