@@ -1,0 +1,16 @@
+// Syntax recovery test fixture covering broken declarations and malformed statements
+invalid_top 42;
+
+recover_demo: function integer ( k: integer ) = {
+    a: integer = ;
+    if (k >= 1 {
+        print k;
+    }
+    b: integer = 2 + / 4;
+    ok_var: integer = 17;
+    return ok_var;
+}
+
+trailing_fn: function integer () = {
+    return recover_demo(3);
+}

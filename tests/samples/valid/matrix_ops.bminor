@@ -1,0 +1,29 @@
+// Matrix and array operations exercising B-Minor types, loops, and operators
+log_msg: function void ( msg: string );
+
+scale_factor: integer = 3;
+grid: array [2] array [2] integer = { {2, 4}, {6, 8} };
+flags: array [3] boolean = { true, false, true };
+
+dot_sum: function integer ( vec: array [] integer, n: integer ) = {
+    idx: integer = 0;
+    acc: integer = 0;
+    for (idx = 0; idx < n; idx++) {
+        if (vec[idx] > 0 && !false) {
+            acc = acc + vec[idx] ^ 2;
+        } else {
+            acc = acc - 1;
+        }
+    }
+    return acc;
+}
+
+main: function integer () = {
+    row: array [3] integer = { 1, 3, 5 };
+    total: integer = dot_sum(row, 3) * scale_factor;
+    newline: char = '\n';
+    print "total=", total, newline;
+    if (total > 0 || total == 0)
+        return 0;
+    return 1;
+}
