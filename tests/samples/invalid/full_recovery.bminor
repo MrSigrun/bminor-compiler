@@ -1,0 +1,18 @@
+// Mixed lexical and syntactic errors testing full pipeline recovery
+broken_decl 120;
+
+first_routine: function integer ( n: integer ) = {
+    v: integer = 8$;
+    text: string = "unclosed string
+    y: integer = ;
+    if (n > 0 {
+        print n;
+    }
+    return 2 + ;
+}
+
+healthy_routine: function integer () = {
+    ans: integer = 42;
+    return ans;
+}
+/* trailing unclosed block comment
